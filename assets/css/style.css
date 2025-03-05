@@ -73,6 +73,9 @@ lI {
 .Cabecalho {
     color: white;
     background-image: url("../img/PROJETOS/CASA\ EMA\ \ RECIFEPE/CAPE.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -132,6 +135,51 @@ img {
 
 
 
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: url(/assets/img/png/frentedesfoque.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-bottom: 200px;
+}
+.services h2{
+    font-size: 42px;
+    font-family: var(--font-tertiary);
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+.articleService{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.articleService article{
+    background-color: aqua;
+    border-radius: 2px;
+    padding: 25px;
+    margin: 20px;
+}
+.articleService article span{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+}
+
+.articleService article ul li{
+    list-style: circle;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-family: var(--font-secondary);
+}
+
+
+
+
 /* FORMULÁRIO E SOBRE */
 .formAndAbout {
     display: flex;
@@ -147,7 +195,7 @@ img {
     width: 450px;
 }
 
-.formEmail h2 {
+.formEmail h3 {
     margin-bottom: 64px;
     font-size: 42px;
     font-family: "Big Shoulders", sans-serif;
@@ -196,6 +244,7 @@ img {
     font-family: var(--font-secondary);
     letter-spacing: 4px;
 }
+
 
 /* SEÇÃO SOBRE E CONTATO */
 .aboutContact {
