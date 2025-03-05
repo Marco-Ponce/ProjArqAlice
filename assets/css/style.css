@@ -144,7 +144,7 @@ img {
 .formEmail {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 450px;
 }
 
 .formEmail h2 {
@@ -155,22 +155,24 @@ img {
     letter-spacing: 2px;
 }
 
-.inputLabel {
+.inputLabel, 
+#labelMsg  {
     font-size: 18px;
     display: flex;
     flex-direction: column;
     font-family: var(--font-secondary);
+    padding-bottom: 24px;
 }
 
 .inputLabel label {
     margin-bottom: 12px;
 }
 
-.inputLabel input,
-.inputLabel textarea {
+.inputLabel input, 
+#labelMsg textarea {
     background: none;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     outline: 0;
     font-size: 16px;
     font-family: var(--font-secondary);
@@ -180,11 +182,12 @@ img {
 .inputLabel textarea {
     resize: none;
     width: 100%;
+
 }
 
 .submitBtn {
     width: 25%;
-    margin-top: 64px;
+    margin-top: 58px;
     color: white;
     background-color: rgb(224, 12, 12);
     border: none;
