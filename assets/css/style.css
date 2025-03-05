@@ -8,7 +8,8 @@
 }
 :root {
     --font-primary: "Italiana", serif;
-    --font-secundary: "Dosis", serif;
+    --font-secondary: "Dosis", serif;
+    --font-tertiary: "Big Shoulders", sans-serif;
 }
 
 
@@ -157,7 +158,7 @@ img {
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    font-family: var(--font-secundary);
+    font-family: var(--font-secondary);
 }
 
 .inputLabel label {
@@ -170,7 +171,7 @@ img {
     border-bottom: 2px solid black;
     outline: 0;
     font-size: 16px;
-    font-family: var(--font-secundary);
+    font-family: var(--font-secondary);
     font-weight: 400;
 }
 
@@ -187,7 +188,7 @@ img {
     border: none;
     font-size: 20px;
     padding: 6px;
-    font-family: var(--font-secundary);
+    font-family: var(--font-secondary);
     letter-spacing: 4px;
 }
 
@@ -235,12 +236,42 @@ img {
 
 .namemedia h3 {
     letter-spacing: 2px;
-    font-family: "Big Shoulders", sans-serif;
+    font-family: var(--font-tertiary);
     font-weight: 400;
     font-size: 32px;
     margin: 25px 0;
 }
 
+.mediaitens{
+    cursor: pointer;
+}
 .socialmedia a:not(:last-child) {
     padding-right: 12px;
+}
+
+
+
+footer{
+    height: 22vh;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+footer .spanNome{
+    font-size: 32px;
+    font-family: var(--font-primary);
+    padding-bottom: 24px;
+}
+
+footer p{
+    font-family: var(--font-secondary);
+}
+
+footer .copy{
+    padding-top: 24px;
+    font-family: var(--font-secondary);
 }

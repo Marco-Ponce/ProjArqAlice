@@ -1,3 +1,4 @@
+document.getElementById('year').textContent = new Date().getFullYear();
 document.addEventListener("DOMContentLoaded", function () {
     let about = document.getElementById("about");
     let aboutText = document.getElementById("aboutText");
