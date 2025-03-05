@@ -23,7 +23,7 @@
 
 .fixed-NavBar {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     height: 50px;
     display: flex;
@@ -75,7 +75,7 @@ lI {
     background-image: url("../img/PROJETOS/CASA\ EMA\ \ RECIFEPE/CAPE.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -134,47 +134,99 @@ img {
 }
 
 
-
-.services{
+/* SERVIÇOS */
+.services {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 80vh;
+    height: 90vh;
     background-image: url(/assets/img/png/frentedesfoque.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    padding: 50px 20px;
     margin-bottom: 200px;
+    position: relative;
 }
-.services h2{
-    font-size: 42px;
+
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.services h2 {
+    font-size: 62px;
     font-family: var(--font-tertiary);
     font-weight: 400;
     letter-spacing: 2px;
-    margin-bottom: 32px;
-}
-.articleService{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-.articleService article{
-    background-color: aqua;
-    border-radius: 2px;
-    padding: 25px;
-    margin: 20px;
-}
-.articleService article span{
-    font-size: 22px;
-    font-weight: 500;
-    font-family: var(--font-secondary);
+    margin-top: 50px;
+    color: white;
+    z-index: 2;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.articleService article ul li{
-    list-style: circle;
-    margin-top: 12px;
-    margin-left: 20px;
+.articleService {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    padding: 40px;
+    z-index: 2;
+}
+
+.articleService article {
+    background: rgba(255, 255, 255, 0.15);
+    /* Fundo translúcido */
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, 0.3s ease;
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+.articleService article:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.articleService article {
+    margin-bottom: 25px;
+}
+
+.articleService article span {
+    font-size: 22px;
+    font-weight: 600;
     font-family: var(--font-secondary);
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+}
+
+
+.leftArticle {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+}
+
+.midArticle {
+    display: grid;
+    grid-template-rows: 400px;
+}
+
+.rightArticle {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
 }
 
 
@@ -198,13 +250,13 @@ img {
 .formEmail h3 {
     margin-bottom: 64px;
     font-size: 42px;
-    font-family: "Big Shoulders", sans-serif;
+    font-family: var(--font-tertiary);
     font-weight: 400;
     letter-spacing: 2px;
 }
 
-.inputLabel, 
-#labelMsg  {
+.inputLabel,
+#labelMsg {
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -216,7 +268,7 @@ img {
     margin-bottom: 12px;
 }
 
-.inputLabel input, 
+.inputLabel input,
 #labelMsg textarea {
     background: none;
     border: none;
@@ -288,7 +340,7 @@ img {
     margin-bottom: 24px;
 }
 
-.namemedia h3 {
+.namemedia h4 {
     letter-spacing: 2px;
     font-family: var(--font-tertiary);
     font-weight: 400;
