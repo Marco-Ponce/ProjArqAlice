@@ -238,7 +238,8 @@ img {
     justify-content: space-around;
     align-items: center;
     background-image: url('/assets/img/png/desenho1.png');
-    height: 80vh;
+    height: 90vh;
+    margin-bottom: 250px;
 }
 
 .formEmail {
