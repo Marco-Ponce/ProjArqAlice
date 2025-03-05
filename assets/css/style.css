@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dosis:wght@200..800&family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --font-primary: "Italiana", serif;
+    --font-secundary: "Dosis", serif;
+}
+
+
+
+/*BARRA DE NAVEGAÇÃO*/
+.NavBar {
+    display: flex;
+    justify-content: flex-end
+}
+
+.fixed-NavBar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+.logo-Nav {
+    height: 35px;
+    cursor: pointer;
+}
+
+.ListaNav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ItensNav {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.1s;
+    font-family: "Dosis", serif;
+}
+
+lI {
+    list-style: none;
+}
+
+.ItensNavLI:not(:last-child) {
+    margin-right: 65px;
+}
+
+.ItensNav:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px black solid;
+}
+
+
+
+
+/*CABEÇALHO*/
+.Cabecalho {
+    color: white;
+    background-image: url("../img/PROJETOS/CASA\ EMA\ \ RECIFEPE/CAPE.png");
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 800px;
+    pointer-events: none;
+    margin-bottom: 300px;
+    position: relative;
+
+}
+
+.AreaLogoTitulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+}
+
+.AreaLogoTitulo h1 {
+    font-size: 65px;
+    font-family: "Italiana", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Logo {
+    margin-left: 35px;
+    width: 400px;
+    border-right: 2px white solid;
+    padding-right: 25px;
+    height: 200;
+}
+
+img {
+    cursor: default;
+}
+
+.TiAndSub {
+    padding-left: 25px;
+
+}
+
+.Subtitulo {
+    display: flex;
+    margin-top: 30px;
+    font-family: "Dosis", serif;
+}
+
+.SubtituloMeio {
+    border: 1px rgb(255, 255, 255) solid;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+
+
+/* FORMULÁRIO E SOBRE */
+.formAndAbout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('/assets/img/png/desenho1.png');
+    height: 80vh;
+}
+
+.formEmail {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.formEmail h2 {
+    margin-bottom: 64px;
+    font-size: 42px;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.inputLabel {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-secundary);
+}
+
+.inputLabel label {
+    margin-bottom: 12px;
+}
+
+.inputLabel input, .inputLabel textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: 0;
+    font-size: 16px;
+    font-family: var(--font-secundary);
+    font-weight: 400;
+}
+
+.inputLabel textarea {
+    resize: none;
+    width: 100%;
+}
+
+.submitBtn {
+    width: 25%;
+    margin-top: 64px;
+    color: white;
+    background-color: rgb(224, 12, 12);
+    border: none;
+    font-size: 20px;
+    padding: 6px;
+    font-family: var(--font-secundary);
+    letter-spacing: 4px;
+}
+
+/* SEÇÃO SOBRE E CONTATO */
+.aboutContact {
+    position: relative;
+    display: flex;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.imageAA1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about p {
+    width: 90%;
+}
+
+.namemedia {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.namemedia h3 {
+    letter-spacing: 2px;
+    font-family: "Big Shoulders", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 25px 0;
+}
+
+.socialmedia a:not(:last-child) {
+    padding-right: 12px;
+}
