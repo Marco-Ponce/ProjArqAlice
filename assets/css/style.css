@@ -145,7 +145,7 @@ img {
     background-color: rgb(29, 29, 29);
 }
 
-.elementTextP span{
+.elementTextP{
     color: white;
     font-size: 24px;
     font-family: var(--font-secondary);
@@ -156,9 +156,6 @@ img {
     background-color: rgb(141, 116, 87);
     padding: 8px 16px;
     border-radius: 2px;
-}
-
-.elementContatcP a{
     text-decoration: none;
     font-size: 24px;
     color: white;
@@ -275,7 +272,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 48px;
-    height: 18vh;
+    height: 24vh;
     background-color: rgb(29, 29, 29);
 }
 
