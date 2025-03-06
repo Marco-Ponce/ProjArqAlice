@@ -8,7 +8,6 @@ Esse projeto visa desenvolver um portifolio profissional, para arquiteta Maria A
 -Em breve sera usado a framework: angular
 
 ## Mudanças a serem feitas(obrigatiras)
-*REPONSIVIDADE GERAL(NÃO HÁ NO MOMENTO)
-*MELHORAS A ESCOLHA DA PALETA DE CORES
-*POSSIVEL REFORMULAÇÃO DO SITE
-+TESTE
+*REPONSIVIDADE GERAL(NÃO HÁ NO MOMENTO)  
+*MELHORAS A ESCOLHA DA PALETA DE CORES  
+*POSSIVEL REFORMULAÇÃO DO SITE  
