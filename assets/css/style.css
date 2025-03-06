@@ -15,6 +15,10 @@
 
 
 
+
+
+
+
 /*BARRA DE NAVEGAÇÃO*/
 .NavBar {
     display: flex;
@@ -31,7 +35,7 @@
     align-items: center;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(29, 29, 29, 0.979);
 }
 
 .logo-Nav {
@@ -42,11 +46,11 @@
 .ListaNav {
     display: flex;
     justify-content: space-between;
-
+    gap: 65px;
 }
 
 .ItensNav {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     transition-duration: 0.1s;
@@ -57,13 +61,11 @@ lI {
     list-style: none;
 }
 
-.ItensNavLI:not(:last-child) {
-    margin-right: 65px;
-}
+
 
 .ItensNav:hover {
     padding-bottom: 2px;
-    border-bottom: 1px black solid;
+    border-bottom: 1px white solid;
 }
 
 
@@ -133,6 +135,37 @@ img {
     margin-left: 5px;
 }
 
+/*Propa*/
+.propa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    height: 18vh;
+    background-color: rgb(29, 29, 29);
+}
+
+.elementTextP span{
+    color: white;
+    font-size: 24px;
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
+}
+
+.elementContatcP{
+    background-color: rgb(141, 116, 87);
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+.elementContatcP a{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-family: var(--font-secondary);
+    letter-spacing: 2px;
+}
+
 
 /* SERVIÇOS */
 .services {
@@ -140,13 +173,12 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 95vh;
     background-image: url(/assets/img/png/frentedesfoque.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 50px 20px;
-    margin-bottom: 200px;
     position: relative;
 }
 
@@ -166,11 +198,13 @@ img {
     font-family: var(--font-tertiary);
     font-weight: 400;
     letter-spacing: 2px;
-    margin-top: 50px;
+    margin-top: 120px;
     color: white;
     z-index: 2;
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid white;
 }
 
 .articleService {
@@ -180,6 +214,23 @@ img {
     width: 100%;
     padding: 40px;
     z-index: 2;
+}
+
+.leftArticle {
+    margin-top: 25px;
+    display: grid;
+   grid-template-rows: auto auto auto;
+}
+
+.midArticle {
+    display: grid;
+    grid-template-rows: 500px;
+}
+
+.rightArticle {
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 .articleService article {
@@ -203,43 +254,47 @@ img {
 }
 
 .articleService article span {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
     font-family: var(--font-secondary);
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     color: white;
 }
 
-
-.leftArticle {
-    margin-top: 25px;
-    display: grid;
-    grid-template-rows: 250px 250px 250px;
-}
-
-.midArticle {
-    display: grid;
-    grid-template-rows: 400px;
-}
-
-.rightArticle {
-    margin-top: 25px;
-    display: grid;
-    grid-template-rows: 250px 250px 250px;
+.articleService article p{
+    font-family: var(--font-secondary);
+    font-size: 18px;
 }
 
 
+/*AVALIÇÕES*/
+
+.assessment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    height: 18vh;
+    background-color: rgb(29, 29, 29);
+}
+
+.assessment span{
+    color: white;
+    font-size: 24px;
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
+}
 
 
-/* FORMULÁRIO E SOBRE */
+
+/* FORMULÁRIO DE ENVIO DE EMAIL E SOBRE */
 .formAndAbout {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-image: url('/assets/img/png/desenho1.png');
     height: 90vh;
-    margin-bottom: 250px;
 }
 
 .formEmail {
@@ -280,7 +335,7 @@ img {
     font-weight: 400;
 }
 
-.inputLabel textarea {
+#labelMsg textarea {
     resize: none;
     width: 100%;
 
@@ -296,6 +351,7 @@ img {
     padding: 6px;
     font-family: var(--font-secondary);
     letter-spacing: 4px;
+    cursor: pointer;
 }
 
 
@@ -360,8 +416,8 @@ img {
 
 /*FOOTER*/
 footer {
-    height: 22vh;
-    background-color: rgb(17, 17, 17);
+    height: 32vh;
+    background-color: rgb(29, 29, 29);
     display: flex;
     justify-content: center;
     align-items: center;
