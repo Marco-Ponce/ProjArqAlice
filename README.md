@@ -5,7 +5,7 @@ Esse projeto visa desenvolver um portifolio profissional, para arquiteta Maria A
 ## Tecnologias Utilizadas
 -HTML/CSS  
 -JAVASCRIPT  
--Em breve sera usado a framework: 
+-Em breve sera usado a framework: ANGULAR
 
 ## Mudanças a serem feitas(obrigatiras)
 *REPONSIVIDADE GERAL(NÃO HÁ NO MOMENTO)  
