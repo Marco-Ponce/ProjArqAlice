@@ -11,12 +11,9 @@
     --font-primary: "Italiana", serif;
     --font-secondary: "Dosis", serif;
     --font-tertiary: "Big Shoulders", sans-serif;
+    --color-two: rgb(112, 89, 62);
+    --dark-gray: rgb(29, 29, 29);
 }
-
-
-
-
-
 
 
 /*BARRA DE NAVEGAÇÃO*/
@@ -39,7 +36,7 @@
 }
 
 .logo-Nav {
-    height: 35px;
+    height: 38px;
     cursor: pointer;
 }
 
@@ -47,6 +44,10 @@
     display: flex;
     justify-content: space-between;
     gap: 65px;
+}
+
+.ItensNavLI{
+    padding: 4px 8px;
 }
 
 .ItensNav {
@@ -61,13 +62,20 @@ lI {
     list-style: none;
 }
 
-
-
 .ItensNav:hover {
     padding-bottom: 2px;
     border-bottom: 1px white solid;
 }
 
+#contactIten{
+    background-color: var(--color-two);
+    padding: 4px 8px;
+}
+
+#contactIten :hover{
+    border: none;
+    padding: 6px;
+}
 
 
 
@@ -78,10 +86,9 @@ lI {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 800px;
+    height: 90vh;
     pointer-events: none;
     position: relative;
 
@@ -185,7 +192,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 48px;
-    height: 18vh;
+    height: 24vh;
     background-color: rgb(29, 29, 29);
 }
 
@@ -197,7 +204,7 @@ img {
 }
 
 .elementContatcP{
-    background-color: rgb(141, 116, 87);
+    background-color: var(--color-two);
     padding: 8px 16px;
     border-radius: 2px;
     text-decoration: none;
@@ -314,8 +321,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px;
-    height: 24vh;
+    gap: 150px;
+    height: 32vh;
     background-color: rgb(29, 29, 29);
 }
 
@@ -364,7 +371,7 @@ img {
 .formEmail {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 600px;
 }
 
 .formEmail h2 {
@@ -387,7 +394,7 @@ img {
 }
 
 .inputLabel label {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .inputLabel input,
@@ -396,7 +403,7 @@ img {
     border: none;
     border-bottom: 1px solid white;
     outline: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--font-secondary);
     font-weight: 400;
     color: white;
@@ -406,6 +413,9 @@ img {
     resize: none;
     width: 100%;
 
+}
+#labelMsg label{
+    margin-bottom: 16px;
 }
 
 .submitBtn {
@@ -484,16 +494,18 @@ img {
 /*FOOTER*/
 footer {
     height: 28vh;
-    background-color: rgb(141, 116, 87);
+    background-color: var(--dark-gray);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: white;
+    border-top: 1px white solid;
 }
 
 footer .spanNome {
-    font-size: 32px;
+    font-size: 58px;
+    font-weight: 500;
     font-family: var(--font-primary);
     padding-bottom: 24px;
 }
