@@ -160,7 +160,7 @@ img {
 .projects{
     display: flex;
     justify-content: center;
-    height: 95vh;
+    height: 100vh;
     background-image: url('/assets/img/png/pb.png');
 }
 
@@ -334,7 +334,8 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url('/assets/img/png/desenho1.png');
+    /*background-image: url('/assets/img/png/desenho1.png');*/
+    background-color: rgb(29, 29, 29);
     height: 90vh;
 }
 
@@ -345,6 +346,7 @@ img {
 }
 
 .formEmail h4 {
+    color: white;
     margin-bottom: 64px;
     font-size: 42px;
     font-family: var(--font-tertiary);
@@ -359,6 +361,7 @@ img {
     flex-direction: column;
     font-family: var(--font-secondary);
     padding-bottom: 24px;
+    color: white;
 }
 
 .inputLabel label {
@@ -369,11 +372,12 @@ img {
 #labelMsg textarea {
     background: none;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     outline: 0;
     font-size: 16px;
     font-family: var(--font-secondary);
     font-weight: 400;
+    color: white;
 }
 
 #labelMsg textarea {
@@ -457,8 +461,8 @@ img {
 
 /*FOOTER*/
 footer {
-    height: 32vh;
-    background-color: rgb(29, 29, 29);
+    height: 28vh;
+    background-color: rgb(141, 116, 87);
     display: flex;
     justify-content: center;
     align-items: center;
