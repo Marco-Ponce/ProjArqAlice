@@ -310,8 +310,7 @@ img {
 
 
 /*AVALIÇÕES*/
-
-.assessment{
+.manyEvaluation{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,11 +319,34 @@ img {
     background-color: rgb(29, 29, 29);
 }
 
-.assessment span{
+.evaluation{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.evaluation .evaluationName{
     color: white;
-    font-size: 24px;
-    font-family: var(--font-secondary);
+    font-family: var(--font-tertiary);
+    font-weight: 400;
     letter-spacing: 1px;
+    font-size: 28px;
+}
+
+.evaluation span {
+    display: flex;
+    gap: 6px;
+}
+.evaluation span img{
+    height: 20px;
+}
+
+.evaluation .evaluationComment{
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 18px;
 }
 
 
