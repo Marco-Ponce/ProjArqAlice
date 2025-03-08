@@ -234,7 +234,7 @@ img {
     z-index: 1;
 }
 
-.services h3 {
+.services h2 {
     font-size: 62px;
     font-family: var(--font-tertiary);
     font-weight: 400;
@@ -345,7 +345,7 @@ img {
     width: 450px;
 }
 
-.formEmail h4 {
+.formEmail h2 {
     color: white;
     margin-bottom: 64px;
     font-size: 42px;
@@ -442,7 +442,7 @@ img {
     margin-bottom: 24px;
 }
 
-.namemedia h5 {
+.namemedia h2 {
     letter-spacing: 2px;
     font-family: var(--font-tertiary);
     font-weight: 400;
