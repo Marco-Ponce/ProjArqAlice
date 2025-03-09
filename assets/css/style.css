@@ -11,7 +11,7 @@
     --font-primary: "Italiana", serif;
     --font-secondary: "Dosis", serif;
     --font-tertiary: "Big Shoulders", sans-serif;
-    --color-two: rgb(112, 89, 62);
+    --color-two: rgb(144, 114, 81);
     --dark-gray: rgb(29, 29, 29);
 }
 
@@ -166,9 +166,11 @@ img {
 /*PROJETOS*/
 .projects{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 250px;
     height: 100vh;
-    background-image: url('/assets/img/png/pb.png');
+    background-image: url('/assets/img/png/imgproj.png');
 }
 
 .projects h2{
@@ -176,7 +178,7 @@ img {
     font-family: var(--font-tertiary);
     font-weight: 400;
     letter-spacing: 2px;
-    margin-top: 120px;
+    margin-top: 80px;
     color: white;
     z-index: 2;
     text-transform: uppercase;
@@ -184,7 +186,6 @@ img {
     padding-bottom: 12px;
     border-bottom: 2px solid white;
 }
-
 
 /*Propa*/
 .propa{
@@ -222,7 +223,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 95vh;
-    background-image: url(/assets/img/png/frentedesfoque.png);
+    background-image: url('/assets/img/png/imgservice.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -422,7 +423,11 @@ img {
     width: 25%;
     margin-top: 58px;
     color: white;
+    /*
+    
     background-color: rgb(224, 12, 12);
+    */
+    background-color: var(--color-two);
     border: none;
     font-size: 20px;
     padding: 6px;
