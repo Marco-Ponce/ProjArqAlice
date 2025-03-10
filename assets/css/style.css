@@ -168,9 +168,11 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 250px;
+    gap: 100px;
     height: 100vh;
     background-image: url('/assets/img/png/imgproj.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .projects h2{
@@ -186,6 +188,111 @@ img {
     padding-bottom: 12px;
     border-bottom: 2px solid white;
 }
+
+.projectArea{
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 30px;
+}
+
+.card{
+    width: 100px;
+    border-radius: 5px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card .row .icon{
+    background-color: var(--color-two);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card .row .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+.description h4 {
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    letter-spacing: 1px;
+}
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.projectArea input {
+    display: none;
+}
+
+.projectArea input:checked + label {
+    width: 900px;
+}
+
+.projectArea input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="pjt1"] {
+    background-image: url('/assets/img/PROJETOS/CASAECALPHAVILLEPE2/Captura\ de\ tela\ 2025-01-12\ 222042.png');
+}
+.card[for="pjt2"] {
+    background-image: url('/assets/img/PROJETOS/CASAECALPHAVILLEPE2/Captura\ de\ tela\ 2025-01-12\ 222129.png');
+}
+.card[for="pjt3"] {
+    background-image: url('/assets/img/PROJETOS/CASAECALPHAVILLEPE2/frente.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Propa*/
 .propa{
